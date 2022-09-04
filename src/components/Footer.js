@@ -9,8 +9,8 @@ function Footer() {
           Ajani Browne UCF Bootcamp Student
           </p>
           <ul>
-            <a href="mailto:ajanibrowne@yahoo.com">Email</a>
-            <a href="https://github.com/AjaniBrowne">Github</a>
+            <li><a href="mailto:ajanibrowne@yahoo.com">Email</a></li>
+            <li><a href="https://github.com/AjaniBrowne" target ='_blank'>Github</a></li>
         </ul>
           <img src={''} className="App-logo" alt="logo" />
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import useState from 'react';
+import {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {validateEmail } from '../utils/helper';
 
@@ -43,9 +43,8 @@ import {validateEmail } from '../utils/helper';
       <p>
         Feel free to contact me with any questions or concerns.
       </p>
-      <form>
+      <form className ="form">
         <div>
-          <form className ="form"/>
           <input
           value={fullName}
           name="name"
@@ -60,13 +59,15 @@ import {validateEmail } from '../utils/helper';
           type="email"
           placeholder="Email@yahoo.com"
         />
-        <input
+        <br/>
+        <textarea
           value={message}
           name="message"
           onChange={handleInputChange}
           type="text"
           placeholder="Message"
         />
+        <br/>
         <button type="button" onClick={handleFormSubmit}>Submit</button>
         </div>
       </form>
